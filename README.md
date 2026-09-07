@@ -24,7 +24,7 @@ the work together.
 | **[ledger-rag](https://github.com/parag-labs/ledger-rag)** | verifiable RAG - every answer ships a tamper-evident proof |
 | **[agent-guard](https://github.com/parag-labs/agent-guard)** | zero-trust runtime sandbox for tool-calling agents |
 | **[token-lens](https://github.com/parag-labs/token-lens)** | attribute LLM cost & latency to feature / tenant / model |
-| **[mini-raft](https://github.com/parag-labs/mini-raft)** and **[multi-raft](https://github.com/parag-labs/multi-raft)** | Raft consensus, and the layer that runs thousands of groups |
+| **[coracle](https://github.com/parag-labs/coracle)** and **[flotilla](https://github.com/parag-labs/flotilla)** | Raft consensus, and the layer that runs thousands of groups |
 | **[deterministic-sim-testing](https://github.com/parag-labs/deterministic-sim-testing)** | replay any distributed-systems bug from a single seed |
 | **[gpu-flock](https://github.com/parag-labs/gpu-flock)** | a few thousand boids flocking entirely on the GPU ([demo](https://parag-labs.github.io/gpu-flock/)) |
 
