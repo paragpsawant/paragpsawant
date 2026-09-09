@@ -8,7 +8,7 @@ run, grounded in real evidence, and hard to break.
 > tested code validates and executes.** The interesting engineering isn't the
 > prompt — it's the guardrail the prompt can't talk its way past.
 
-**39 repos · 1,050+ tests green in CI · 13 live demos · cores in 7 languages · 8 with reproducible benchmarks**
+**40 repos · 1,080+ tests green in CI · 14 live demos · cores in 7 languages · 8 with reproducible benchmarks**
 
 ![Python](https://img.shields.io/badge/Python-3670A0?style=flat-square&logo=python&logoColor=ffdd54)
 ![C#](https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=dotnet&logoColor=white)
@@ -87,7 +87,9 @@ flowchart LR
   [guardianforge](https://github.com/parag-labs/guardianforge) (fleet governance, Go + C#).
 - **Grounded retrieval** — RAG you can prove: [ledger-rag](https://github.com/parag-labs/ledger-rag)
   ships a tamper-evident proof with every answer;
-  [knowledge-workspace](https://github.com/parag-labs/knowledge-workspace) cites every claim.
+  [knowledge-workspace](https://github.com/parag-labs/knowledge-workspace) cites every claim;
+  [repo-index](https://github.com/parag-labs/repo-index) turns any repo into a citable knowledge
+  base and answers only from retrieved source.
 - **Ship-it discipline** — [eval-forge](https://github.com/parag-labs/eval-forge) (CI eval gate),
   [prompt-shield](https://github.com/parag-labs/prompt-shield) (injection in / PII out),
   [token-lens](https://github.com/parag-labs/token-lens) (cost attribution),
@@ -111,7 +113,7 @@ flowchart LR
 | **[infra-optimizer](https://github.com/parag-labs/infra-optimizer)** | AI infra optimizer in Rust — the model only picks among candidates Rust has already proven safe | | ![ci](https://github.com/parag-labs/infra-optimizer/actions/workflows/ci.yml/badge.svg) |
 | **[gpu-flock](https://github.com/parag-labs/gpu-flock)** | a few thousand boids flocking entirely on the GPU with WebGPU compute shaders | [▶ demo](https://parag-labs.github.io/gpu-flock/) | ![ci](https://github.com/parag-labs/gpu-flock/actions/workflows/validate.yml/badge.svg) |
 
-More — 39 focused projects, 13 live demos — under **[parag-labs](https://github.com/parag-labs)**.
+More — 40 focused projects, 14 live demos — under **[parag-labs](https://github.com/parag-labs)**.
 
 ### A deep-dive: verifiable RAG
 
