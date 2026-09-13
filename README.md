@@ -29,6 +29,10 @@ surfaces on top of it.
 > distributed systems, and the product surfaces (web, mobile, GPU) on top.
 
 <p align="center">
+  <a href="https://parags.dev"><img src="https://img.shields.io/badge/Portfolio-parags.dev-6E56CF?style=for-the-badge&logo=cloudflare&logoColor=white" alt="Portfolio — parags.dev"/></a>
+</p>
+
+<p align="center">
   <a href="https://parag-labs.github.io/agentforge-dashboard/"><img src="assets/hero-agentforge.png" width="49%" alt="AgentForge — agent-fleet cockpit with cost, trust, and grounded insights (live demo)"/></a>
   <a href="https://parag-labs.github.io/agent-trace/"><img src="assets/hero-agent-trace.png" width="49%" alt="agent-trace — per-run cost/token/latency timeline with a budget gate (live demo)"/></a>
 </p>
@@ -183,4 +187,5 @@ every major registry:
 
 - 🧰 Backend · distributed systems · applied cryptography · LLM & agent tooling
 - ☁️ Azure (AKS, Container Apps, Cosmos DB), Docker/Kubernetes, CI/CD
+- 🌐 Portfolio: [parags.dev](https://parags.dev)
 - 💬 [linkedin.com/in/paragsawant](https://www.linkedin.com/in/paragsawant/)
