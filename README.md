@@ -1,8 +1,9 @@
 # Hi, I'm Parag 👋
 
-**AI / backend engineer.** I build the deterministic control plane *around* large
-language models — the layer that decides whether a model is safe to ship, cheap to
-run, grounded in real evidence, and hard to break.
+**Senior software engineer — I build across the whole stack, centered on AI.**
+From speculative decoding and verifiable RAG to ten on-device mobile apps and a
+WebGPU renderer: the deterministic AI core *and* the mobile, web, and GPU
+surfaces on top of it.
 
 > My one design rule, in every agent I ship: **the model proposes; deterministic,
 > tested code validates and executes.** The interesting engineering isn't the
@@ -17,19 +18,26 @@ run, grounded in real evidence, and hard to break.
 ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
+![WebGPU](https://img.shields.io/badge/WebGPU-005A9C?style=flat-square&logo=webgpu&logoColor=white)
 &nbsp;
 ![LLM Agents](https://img.shields.io/badge/LLM_Agents-6E56CF?style=flat-square)
 ![RAG](https://img.shields.io/badge/RAG-0EA5E9?style=flat-square)
-![Evals](https://img.shields.io/badge/Evals_&_Guardrails-16A34A?style=flat-square)
+![Distributed Systems](https://img.shields.io/badge/Distributed_Systems-334155?style=flat-square)
 ![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
 
-> **Open to Senior / Staff AI-engineering roles** — agents, RAG, and LLM infrastructure.
+> **Open to Senior / Staff Software Engineering roles** — AI systems, backend &
+> distributed systems, and the product surfaces (web, mobile, GPU) on top.
 
 <p align="center">
   <a href="https://parag-labs.github.io/agentforge-dashboard/"><img src="assets/hero-agentforge.png" width="49%" alt="AgentForge — agent-fleet cockpit with cost, trust, and grounded insights (live demo)"/></a>
   <a href="https://parag-labs.github.io/agent-trace/"><img src="assets/hero-agent-trace.png" width="49%" alt="agent-trace — per-run cost/token/latency timeline with a budget gate (live demo)"/></a>
 </p>
-<p align="center"><sub><b>Click either image for the live demo.</b> Left: <a href="https://parag-labs.github.io/agentforge-dashboard/">AgentForge</a> agent-fleet cockpit. Right: <a href="https://parag-labs.github.io/agent-trace/">agent-trace</a> run inspector with a cost/budget gate.</sub></p>
+<p align="center">
+  <a href="https://parag-labs.github.io/aura-surface/"><img src="assets/mobile-aura.png" width="24%" alt="AuraSurface — emotion-responsive mobile UI (live demo)"/></a>
+  <a href="https://parag-labs.github.io/morph-ui/"><img src="assets/mobile-morph.png" width="24%" alt="MorphUI — generative interface engine (live demo)"/></a>
+  <a href="https://parag-labs.github.io/thumb-sphere/"><img src="assets/mobile-thumb.png" width="24%" alt="ThumbSphere — thumb-zone mobile design system (live demo)"/></a>
+</p>
+<p align="center"><sub><b>Every image links to a live demo.</b> Top: AI dashboards (<a href="https://parag-labs.github.io/agentforge-dashboard/">AgentForge</a>, <a href="https://parag-labs.github.io/agent-trace/">agent-trace</a>). Bottom: three of ten on-device <a href="https://github.com/parag-labs">Flutter apps</a> — plus a <a href="https://parag-labs.github.io/gpu-flock/">WebGPU boids renderer</a>.</sub></p>
 
 I'm a Senior Software Engineer at Microsoft, and on nights and weekends I build
 small, tested tools for the unglamorous parts of putting AI in production.
@@ -108,8 +116,12 @@ flowchart LR
   pass with **bit-identical logits across Python, C#, and Java**; and
   [batch-invariant](https://github.com/parag-labs/batch-invariant) shows — and fixes — the
   reduction-order bug that makes a decoded token depend on its batch-mates.
-- **On-device AI & interfaces** — ten Flutter apps with tested, deterministic cores,
-  each with a live demo (on-device intelligence, health, privacy, adaptive UI).
+- **Interfaces, mobile & graphics** — ten on-device **Flutter** apps, each a tested,
+  deterministic core with a live demo ([intent-canvas](https://github.com/parag-labs/intent-canvas),
+  [morph-ui](https://github.com/parag-labs/morph-ui), [aura-surface](https://github.com/parag-labs/aura-surface),
+  [thumb-sphere](https://github.com/parag-labs/thumb-sphere), and more); **web** dashboards in
+  React / Next / React Flow (the agent tooling above); and [gpu-flock](https://github.com/parag-labs/gpu-flock),
+  thousands of boids computed and drawn entirely on the GPU with **WebGPU** compute shaders.
 
 ### Featured work
 
@@ -121,6 +133,7 @@ flowchart LR
 | **[agent-guard](https://github.com/parag-labs/agent-guard)** | zero-trust runtime sandbox for tool-calling agents: least-privilege policy + signed audit log | | ![ci](https://github.com/parag-labs/agent-guard/actions/workflows/tests.yml/badge.svg) |
 | **[infra-optimizer](https://github.com/parag-labs/infra-optimizer)** | AI infra optimizer in Rust — the model only picks among candidates Rust has already proven safe | | ![ci](https://github.com/parag-labs/infra-optimizer/actions/workflows/ci.yml/badge.svg) |
 | **[gpu-flock](https://github.com/parag-labs/gpu-flock)** | a few thousand boids flocking entirely on the GPU with WebGPU compute shaders | [▶ demo](https://parag-labs.github.io/gpu-flock/) | ![ci](https://github.com/parag-labs/gpu-flock/actions/workflows/validate.yml/badge.svg) |
+| **[intent-canvas](https://github.com/parag-labs/intent-canvas)** | intent-first mobile home — express a goal in plain language, get a living workspace of modules; on-device deterministic intent engine (Flutter) | [▶ demo](https://parag-labs.github.io/intent-canvas/) | ![ci](https://github.com/parag-labs/intent-canvas/actions/workflows/ci.yml/badge.svg) |
 
 More — 44 focused projects, 14 live demos — under **[parag-labs](https://github.com/parag-labs)**.
 
