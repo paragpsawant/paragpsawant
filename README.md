@@ -54,7 +54,7 @@ Production AI and platform work at scale — the day job behind the side project
   enterprise service into distributed microservices and built the reverse-proxy layer
   routing between customer-managed and data planes — systems used globally at
   enterprise scale.
-- **Azure Approvals** — built three production AI agents on the team: an **E2E failure-
+- **Zero-Trust platform** — built three production AI agents on the team: an **E2E failure-
   triage agent** that auto-diagnoses failed pipeline runs and files bugs (turning hours
   of manual triage into minutes), a PR review & security agent, and a **RAG** architecture
   knowledge agent with citation-backed answers across repos and specs.
