@@ -8,7 +8,7 @@ run, grounded in real evidence, and hard to break.
 > tested code validates and executes.** The interesting engineering isn't the
 > prompt — it's the guardrail the prompt can't talk its way past.
 
-**40 repos · 1,080+ tests green in CI · 14 live demos · cores in 7 languages · 8 with reproducible benchmarks**
+**42 repos · 1,120+ tests green in CI · 14 live demos · cores in 7 languages · 8 with reproducible benchmarks**
 
 ![Python](https://img.shields.io/badge/Python-3670A0?style=flat-square&logo=python&logoColor=ffdd54)
 ![C#](https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=dotnet&logoColor=white)
@@ -99,6 +99,11 @@ flowchart LR
   (Raft) + [flotilla](https://github.com/parag-labs/flotilla) (thousands of groups on one node),
   [deterministic-sim-testing](https://github.com/parag-labs/deterministic-sim-testing),
   [durable-execution](https://github.com/parag-labs/durable-execution).
+- **Model internals & LLM correctness** — [spec-decode](https://github.com/parag-labs/spec-decode)
+  implements speculative decoding from scratch and *proves* it's exact (the emitted
+  distribution provably equals sampling the target), with honest speedup benchmarks;
+  [metamorph](https://github.com/parag-labs/metamorph) is metamorphic testing for LLMs —
+  invariance under paraphrase, reorder, and negation, shrinking each failure to a minimal prompt.
 - **On-device AI & interfaces** — ten Flutter apps with tested, deterministic cores,
   each with a live demo (on-device intelligence, health, privacy, adaptive UI).
 
@@ -113,7 +118,7 @@ flowchart LR
 | **[infra-optimizer](https://github.com/parag-labs/infra-optimizer)** | AI infra optimizer in Rust — the model only picks among candidates Rust has already proven safe | | ![ci](https://github.com/parag-labs/infra-optimizer/actions/workflows/ci.yml/badge.svg) |
 | **[gpu-flock](https://github.com/parag-labs/gpu-flock)** | a few thousand boids flocking entirely on the GPU with WebGPU compute shaders | [▶ demo](https://parag-labs.github.io/gpu-flock/) | ![ci](https://github.com/parag-labs/gpu-flock/actions/workflows/validate.yml/badge.svg) |
 
-More — 40 focused projects, 14 live demos — under **[parag-labs](https://github.com/parag-labs)**.
+More — 42 focused projects, 14 live demos — under **[parag-labs](https://github.com/parag-labs)**.
 
 ### A deep-dive: verifiable RAG
 
