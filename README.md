@@ -30,13 +30,13 @@ surfaces on top of it.
 
 <p align="center">
   <a href="https://parags.dev"><img src="https://img.shields.io/badge/Portfolio-parags.dev-6E56CF?style=for-the-badge&logo=cloudflare&logoColor=white" alt="Portfolio — parags.dev"/></a>
-  <a href="https://huggingface.co/spaces/screenshot-redactor/app"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20New-Screenshot%20Redactor-FFD21E?style=for-the-badge" alt="New — Screenshot Redactor live demo on Hugging Face"/></a>
+  <a href="https://huggingface.co/spaces/screenshot-redactor/pii-privacy-redaction"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20New-Screenshot%20Redactor-FFD21E?style=for-the-badge" alt="New — Screenshot Redactor live demo on Hugging Face"/></a>
 </p>
 
 > 🆕 **[Screenshot Redactor](https://github.com/paragpsawant/screenshot-redactor)**: paste a screenshot and it
 > hides API keys, passwords, emails, card numbers, names, addresses, faces and QR codes, with OCR and PII
 > models running **entirely in your browser** (nothing uploaded).
-> [▶ Try it on Hugging Face](https://huggingface.co/spaces/screenshot-redactor/app)
+> [▶ Try it on Hugging Face](https://huggingface.co/spaces/screenshot-redactor/pii-privacy-redaction)
 
 <p align="center">
   <a href="https://parag-labs.github.io/agentforge-dashboard/"><img src="assets/hero-agentforge.png" width="49%" alt="AgentForge — agent-fleet cockpit with cost, trust, and grounded insights (live demo)"/></a>
@@ -137,7 +137,7 @@ flowchart LR
 
 | Project | What it is | | CI |
 |---|---|---|---|
-| **[screenshot-redactor](https://github.com/paragpsawant/screenshot-redactor)** | hide API keys, passwords, PII, faces & QR codes in screenshots, 100% in the browser; OCR + PII models on ONNX Runtime Web, nothing uploaded | [▶ demo](https://huggingface.co/spaces/screenshot-redactor/app) | ![ci](https://github.com/paragpsawant/screenshot-redactor/actions/workflows/ci.yml/badge.svg) |
+| **[screenshot-redactor](https://github.com/paragpsawant/screenshot-redactor)** | hide API keys, passwords, PII, faces & QR codes in screenshots, 100% in the browser; OCR + PII models on ONNX Runtime Web, nothing uploaded | [▶ demo](https://huggingface.co/spaces/screenshot-redactor/pii-privacy-redaction) | ![ci](https://github.com/paragpsawant/screenshot-redactor/actions/workflows/ci.yml/badge.svg) |
 | **[agent-trace](https://github.com/parag-labs/agent-trace)** | visual timeline + replay for agent runs — where a run spent time, tokens, and money, then diff two runs | [▶ demo](https://parag-labs.github.io/agent-trace/) | ![ci](https://github.com/parag-labs/agent-trace/actions/workflows/build.yml/badge.svg) |
 | **[agentforge-dashboard](https://github.com/parag-labs/agentforge-dashboard)** | register, monitor, and deeply compare agents — radar + trade-off insights, spatial agent map | [▶ demo](https://parag-labs.github.io/agentforge-dashboard/) | ![ci](https://github.com/parag-labs/agentforge-dashboard/actions/workflows/ci.yml/badge.svg) |
 | **[ledger-rag](https://github.com/parag-labs/ledger-rag)** | verifiable RAG — every answer ships a tamper-evident cryptographic proof (Python/C#/Java) | | ![ci](https://github.com/parag-labs/ledger-rag/actions/workflows/tests.yml/badge.svg) |
