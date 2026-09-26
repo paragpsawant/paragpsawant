@@ -274,25 +274,6 @@ device.
 
 <sub>The <b>live</b> badge is a weekly GitHub Actions job that opens the published Hugging Face Space in a real browser, runs the example end to end, and fails if a single request leaves the page.</sub>
 
-```mermaid
-flowchart LR
-  subgraph TAB["Your browser tab (nothing leaves it)"]
-    direction LR
-    CORE["@cleanroom-ai/core<br/>OCR · secret &amp; PII rules · NER · faces<br/>ONNX Runtime Web + WASM workers"]:::core
-    CORE --> S["🕶️ Screenshots"]:::app
-    CORE --> L["🧽 Logs &amp; HAR"]:::app
-    CORE --> P["📄 PDFs"]:::app
-    CORE --> A["🔊 Audio<br/>+ Whisper"]:::app
-    CORE --> PH["📷 Photos<br/>+ EXIF"]:::app
-    CORE --> V["🎬 Video<br/>+ WebCodecs"]:::app
-  end
-  F["Your file"] --> TAB
-  TAB --> OUT["Clean copy<br/>verified"]:::ok
-  classDef core fill:#eef2ff,stroke:#6366f1,color:#312e81;
-  classDef app fill:#ecfeff,stroke:#06b6d4,color:#164e63;
-  classDef ok fill:#f0fdf4,stroke:#22c55e,color:#14532d;
-```
-
 <details>
 <summary><b>How do you know nothing is uploaded?</b></summary>
 <br/>
