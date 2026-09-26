@@ -30,13 +30,17 @@ surfaces on top of it.
 
 <p align="center">
   <a href="https://parags.dev"><img src="https://img.shields.io/badge/Portfolio-parags.dev-6E56CF?style=for-the-badge&logo=cloudflare&logoColor=white" alt="Portfolio — parags.dev"/></a>
-  <a href="https://huggingface.co/spaces/screenshot-redactor/pii-privacy-redaction"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20New-Screenshot%20Redactor-FFD21E?style=for-the-badge" alt="New — Screenshot Redactor live demo on Hugging Face"/></a>
+  <a href="https://huggingface.co/cleanroom-ai"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20New-cleanroom--ai-FFD21E?style=for-the-badge" alt="New — cleanroom-ai privacy tools on Hugging Face"/></a>
 </p>
 
-> 🆕 **[Screenshot Redactor](https://github.com/paragpsawant/screenshot-redactor)**: paste a screenshot and it
-> hides API keys, passwords, emails, card numbers, names, addresses, faces and QR codes, with OCR and PII
-> models running **entirely in your browser** (nothing uploaded).
-> [▶ Try it on Hugging Face](https://huggingface.co/spaces/screenshot-redactor/pii-privacy-redaction)
+> 🆕 **[cleanroom-ai](https://huggingface.co/cleanroom-ai)**: clean it before you share it. Six privacy tools whose
+> OCR, speech and PII models run **entirely in your browser**, so nothing gets uploaded:
+> [Screenshot Redactor](https://huggingface.co/spaces/cleanroom-ai/pii-privacy-redaction) ·
+> [Log Scrubber](https://huggingface.co/spaces/cleanroom-ai/log-secret-scrubber) ·
+> [PDF Redactor](https://huggingface.co/spaces/cleanroom-ai/pdf-redaction) ·
+> [Audio Redactor](https://huggingface.co/spaces/cleanroom-ai/audio-pii-redaction) ·
+> [Photo Share-Safe](https://huggingface.co/spaces/cleanroom-ai/photo-exif-privacy) ·
+> [Video Redactor](https://huggingface.co/spaces/cleanroom-ai/video-redaction)
 
 <p align="center">
   <a href="https://parag-labs.github.io/agentforge-dashboard/"><img src="assets/hero-agentforge.png" width="49%" alt="AgentForge — agent-fleet cockpit with cost, trust, and grounded insights (live demo)"/></a>
@@ -137,7 +141,12 @@ flowchart LR
 
 | Project | What it is | | CI |
 |---|---|---|---|
-| **[screenshot-redactor](https://github.com/paragpsawant/screenshot-redactor)** | hide API keys, passwords, PII, faces & QR codes in screenshots, 100% in the browser; OCR + PII models on ONNX Runtime Web, nothing uploaded | [▶ demo](https://huggingface.co/spaces/screenshot-redactor/pii-privacy-redaction) | ![ci](https://github.com/paragpsawant/screenshot-redactor/actions/workflows/ci.yml/badge.svg) |
+| **[screenshot-redactor](https://github.com/paragpsawant/screenshot-redactor)** | hide API keys, passwords, PII, faces & QR codes in screenshots, 100% in the browser; OCR + PII models on ONNX Runtime Web, nothing uploaded | [▶ demo](https://huggingface.co/spaces/cleanroom-ai/pii-privacy-redaction) | ![ci](https://github.com/paragpsawant/screenshot-redactor/actions/workflows/ci.yml/badge.svg) |
+| **[log-secret-scrubber](https://github.com/paragpsawant/log-secret-scrubber)** | scrub API keys, tokens, cookies, emails & IPs from logs, .env files and HAR captures before sharing; structure-aware, 100% in the browser | [▶ demo](https://huggingface.co/spaces/cleanroom-ai/log-secret-scrubber) | ![ci](https://github.com/paragpsawant/log-secret-scrubber/actions/workflows/ci.yml/badge.svg) |
+| **[pdf-redaction](https://github.com/paragpsawant/pdf-redaction)** | true PDF redaction: detects PII & secrets, flattens pages, then verifies no text remains; nothing uploaded | [▶ demo](https://huggingface.co/spaces/cleanroom-ai/pdf-redaction) | ![ci](https://github.com/paragpsawant/pdf-redaction/actions/workflows/ci.yml/badge.svg) |
+| **[audio-pii-redaction](https://github.com/paragpsawant/audio-pii-redaction)** | bleeps names, phone numbers, card numbers & emails in recordings with Whisper + PII NER running in the browser | [▶ demo](https://huggingface.co/spaces/cleanroom-ai/audio-pii-redaction) | ![ci](https://github.com/paragpsawant/audio-pii-redaction/actions/workflows/ci.yml/badge.svg) |
+| **[photo-exif-privacy](https://github.com/paragpsawant/photo-exif-privacy)** | strips GPS, camera serials & thumbnails from photos, and blurs faces & plates, entirely on-device | [▶ demo](https://huggingface.co/spaces/cleanroom-ai/photo-exif-privacy) | ![ci](https://github.com/paragpsawant/photo-exif-privacy/actions/workflows/ci.yml/badge.svg) |
+| **[video-redaction](https://github.com/paragpsawant/video-redaction)** | finds and tracks keys, names, emails & faces through screen recordings, then re-encodes a redacted WebM in the browser | [▶ demo](https://huggingface.co/spaces/cleanroom-ai/video-redaction) | ![ci](https://github.com/paragpsawant/video-redaction/actions/workflows/ci.yml/badge.svg) |
 | **[agent-trace](https://github.com/parag-labs/agent-trace)** | visual timeline + replay for agent runs — where a run spent time, tokens, and money, then diff two runs | [▶ demo](https://parag-labs.github.io/agent-trace/) | ![ci](https://github.com/parag-labs/agent-trace/actions/workflows/build.yml/badge.svg) |
 | **[agentforge-dashboard](https://github.com/parag-labs/agentforge-dashboard)** | register, monitor, and deeply compare agents — radar + trade-off insights, spatial agent map | [▶ demo](https://parag-labs.github.io/agentforge-dashboard/) | ![ci](https://github.com/parag-labs/agentforge-dashboard/actions/workflows/ci.yml/badge.svg) |
 | **[ledger-rag](https://github.com/parag-labs/ledger-rag)** | verifiable RAG — every answer ships a tamper-evident cryptographic proof (Python/C#/Java) | | ![ci](https://github.com/parag-labs/ledger-rag/actions/workflows/tests.yml/badge.svg) |
