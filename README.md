@@ -9,7 +9,7 @@ surfaces on top of it.
 > tested code validates and executes.** The interesting engineering isn't the
 > prompt — it's the guardrail the prompt can't talk its way past.
 
-**44 repos · 1,140+ tests green in CI · 14 live demos · cores in 7 languages · 8 with reproducible benchmarks**
+**44 repos · 1,140+ tests green in CI · 20 live demos · cores in 7 languages · 8 with reproducible benchmarks**
 
 ![Python](https://img.shields.io/badge/Python-3670A0?style=flat-square&logo=python&logoColor=ffdd54)
 ![C#](https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=dotnet&logoColor=white)
@@ -30,17 +30,126 @@ surfaces on top of it.
 
 <p align="center">
   <a href="https://parags.dev"><img src="https://img.shields.io/badge/Portfolio-parags.dev-6E56CF?style=for-the-badge&logo=cloudflare&logoColor=white" alt="Portfolio — parags.dev"/></a>
-  <a href="https://huggingface.co/cleanroom-ai"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20New-cleanroom--ai-FFD21E?style=for-the-badge" alt="New — cleanroom-ai privacy tools on Hugging Face"/></a>
+  <a href="#cleanroom-ai-clean-it-before-you-share-it"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20New-cleanroom--ai-FFD21E?style=for-the-badge" alt="New — cleanroom-ai privacy tools on Hugging Face"/></a>
 </p>
 
-> 🆕 **[cleanroom-ai](https://huggingface.co/cleanroom-ai)**: clean it before you share it. Six privacy tools whose
-> OCR, speech and PII models run **entirely in your browser**, so nothing gets uploaded:
-> [Screenshot Redactor](https://huggingface.co/spaces/cleanroom-ai/pii-privacy-redaction) ·
-> [Log Scrubber](https://huggingface.co/spaces/cleanroom-ai/log-secret-scrubber) ·
-> [PDF Redactor](https://huggingface.co/spaces/cleanroom-ai/pdf-redaction) ·
-> [Audio Redactor](https://huggingface.co/spaces/cleanroom-ai/audio-pii-redaction) ·
-> [Photo Share-Safe](https://huggingface.co/spaces/cleanroom-ai/photo-exif-privacy) ·
-> [Video Redactor](https://huggingface.co/spaces/cleanroom-ai/video-redaction)
+### cleanroom-ai: clean it before you share it
+
+<p align="center">
+  <a href="https://huggingface.co/cleanroom-ai"><img src="assets/cleanroom-banner.svg" width="100%" alt="cleanroom-ai: a scanner sweeps a support log and replaces an email, an API key, a card number and a phone number with redaction bars"/></a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/tools-6-6E56CF?style=flat-square" alt="6 tools"/>
+  <img src="https://img.shields.io/badge/uploads-0_bytes-22C55E?style=flat-square" alt="0 bytes uploaded"/>
+  <img src="https://img.shields.io/badge/models-on--device-0EA5E9?style=flat-square&logo=onnx&logoColor=white" alt="Models run on-device"/>
+  <img src="https://img.shields.io/badge/runtime-ONNX_Runtime_Web_·_WASM-334155?style=flat-square&logo=webassembly&logoColor=white" alt="ONNX Runtime Web and WebAssembly"/>
+  <img src="https://img.shields.io/badge/trackers-none-22C55E?style=flat-square" alt="No trackers"/>
+  <img src="https://img.shields.io/badge/license-Apache--2.0-475569?style=flat-square" alt="Apache-2.0"/>
+  <br/>
+  <a href="https://huggingface.co/cleanroom-ai"><img src="https://img.shields.io/badge/%F0%9F%A4%97_Hugging_Face-cleanroom--ai-FFD21E?style=for-the-badge" alt="cleanroom-ai on Hugging Face"/></a>
+  <a href="https://github.com/cleanroom-ai"><img src="https://img.shields.io/badge/GitHub-cleanroom--ai-181717?style=for-the-badge&logo=github&logoColor=white" alt="cleanroom-ai on GitHub"/></a>
+</p>
+
+Everyone pastes screenshots, logs, PDFs and recordings into tickets, chats and AI assistants, and they
+leak secrets and personal data. cleanroom-ai is six free tools that clean those files first. The OCR,
+speech and PII models all run **in your browser tab**, so the file you are protecting never leaves your
+device.
+
+<table>
+<tr>
+<td width="33%" valign="top">
+<a href="https://huggingface.co/spaces/cleanroom-ai/pii-privacy-redaction"><img src="https://raw.githubusercontent.com/cleanroom-ai/screenshot-redactor/main/web/assets/social-preview.png" alt="Screenshot Redactor: open the live demo"/></a>
+<br/><b>🕶️ <a href="https://huggingface.co/spaces/cleanroom-ai/pii-privacy-redaction">Screenshot Redactor</a></b>
+<br/><sub>API keys, passwords, emails, cards, names, faces &amp; QR codes in screenshots</sub>
+<br/><a href="https://huggingface.co/spaces/cleanroom-ai/pii-privacy-redaction"><img src="https://img.shields.io/badge/%F0%9F%A4%97_Try_it-FFD21E?style=flat-square" alt="Try it on Hugging Face"/></a>
+<a href="https://github.com/cleanroom-ai/screenshot-redactor"><img src="https://img.shields.io/badge/Code-181717?style=flat-square&logo=github&logoColor=white" alt="Source on GitHub"/></a>
+<a href="https://github.com/cleanroom-ai/screenshot-redactor/actions/workflows/live-check.yml"><img src="https://img.shields.io/github/actions/workflow/status/cleanroom-ai/screenshot-redactor/live-check.yml?style=flat-square&label=live&logo=githubactions&logoColor=white" alt="Live check: real browser against the published Space"/></a>
+</td>
+<td width="33%" valign="top">
+<a href="https://huggingface.co/spaces/cleanroom-ai/log-secret-scrubber"><img src="https://raw.githubusercontent.com/cleanroom-ai/log-secret-scrubber/main/assets/social-preview.png" alt="Log Scrubber: open the live demo"/></a>
+<br/><b>🧽 <a href="https://huggingface.co/spaces/cleanroom-ai/log-secret-scrubber">Log Scrubber</a></b>
+<br/><sub>tokens, cookies &amp; PII in logs, <code>.env</code>, JSON and HAR files, structure-aware</sub>
+<br/><a href="https://huggingface.co/spaces/cleanroom-ai/log-secret-scrubber"><img src="https://img.shields.io/badge/%F0%9F%A4%97_Try_it-FFD21E?style=flat-square" alt="Try it on Hugging Face"/></a>
+<a href="https://github.com/cleanroom-ai/log-secret-scrubber"><img src="https://img.shields.io/badge/Code-181717?style=flat-square&logo=github&logoColor=white" alt="Source on GitHub"/></a>
+<a href="https://github.com/cleanroom-ai/log-secret-scrubber/actions/workflows/live-check.yml"><img src="https://img.shields.io/github/actions/workflow/status/cleanroom-ai/log-secret-scrubber/live-check.yml?style=flat-square&label=live&logo=githubactions&logoColor=white" alt="Live check: real browser against the published Space"/></a>
+</td>
+<td width="33%" valign="top">
+<a href="https://huggingface.co/spaces/cleanroom-ai/pdf-redaction"><img src="https://raw.githubusercontent.com/cleanroom-ai/pdf-redaction/main/assets/social-preview.png" alt="PDF Redactor: open the live demo"/></a>
+<br/><b>📄 <a href="https://huggingface.co/spaces/cleanroom-ai/pdf-redaction">PDF Redactor</a></b>
+<br/><sub>true redaction: flattens pages, then verifies no hidden text survives</sub>
+<br/><a href="https://huggingface.co/spaces/cleanroom-ai/pdf-redaction"><img src="https://img.shields.io/badge/%F0%9F%A4%97_Try_it-FFD21E?style=flat-square" alt="Try it on Hugging Face"/></a>
+<a href="https://github.com/cleanroom-ai/pdf-redaction"><img src="https://img.shields.io/badge/Code-181717?style=flat-square&logo=github&logoColor=white" alt="Source on GitHub"/></a>
+<a href="https://github.com/cleanroom-ai/pdf-redaction/actions/workflows/live-check.yml"><img src="https://img.shields.io/github/actions/workflow/status/cleanroom-ai/pdf-redaction/live-check.yml?style=flat-square&label=live&logo=githubactions&logoColor=white" alt="Live check: real browser against the published Space"/></a>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top">
+<a href="https://huggingface.co/spaces/cleanroom-ai/audio-pii-redaction"><img src="https://raw.githubusercontent.com/cleanroom-ai/audio-pii-redaction/main/assets/social-preview.png" alt="Audio Redactor: open the live demo"/></a>
+<br/><b>🔊 <a href="https://huggingface.co/spaces/cleanroom-ai/audio-pii-redaction">Audio Redactor</a></b>
+<br/><sub>bleeps names, phone &amp; card numbers with Whisper running in the tab</sub>
+<br/><a href="https://huggingface.co/spaces/cleanroom-ai/audio-pii-redaction"><img src="https://img.shields.io/badge/%F0%9F%A4%97_Try_it-FFD21E?style=flat-square" alt="Try it on Hugging Face"/></a>
+<a href="https://github.com/cleanroom-ai/audio-pii-redaction"><img src="https://img.shields.io/badge/Code-181717?style=flat-square&logo=github&logoColor=white" alt="Source on GitHub"/></a>
+<a href="https://github.com/cleanroom-ai/audio-pii-redaction/actions/workflows/live-check.yml"><img src="https://img.shields.io/github/actions/workflow/status/cleanroom-ai/audio-pii-redaction/live-check.yml?style=flat-square&label=live&logo=githubactions&logoColor=white" alt="Live check: real browser against the published Space"/></a>
+</td>
+<td width="33%" valign="top">
+<a href="https://huggingface.co/spaces/cleanroom-ai/photo-exif-privacy"><img src="https://raw.githubusercontent.com/cleanroom-ai/photo-exif-privacy/main/assets/social-preview.png" alt="Photo Share-Safe: open the live demo"/></a>
+<br/><b>📷 <a href="https://huggingface.co/spaces/cleanroom-ai/photo-exif-privacy">Photo Share-Safe</a></b>
+<br/><sub>strips GPS &amp; hidden EXIF, blurs faces and license plates</sub>
+<br/><a href="https://huggingface.co/spaces/cleanroom-ai/photo-exif-privacy"><img src="https://img.shields.io/badge/%F0%9F%A4%97_Try_it-FFD21E?style=flat-square" alt="Try it on Hugging Face"/></a>
+<a href="https://github.com/cleanroom-ai/photo-exif-privacy"><img src="https://img.shields.io/badge/Code-181717?style=flat-square&logo=github&logoColor=white" alt="Source on GitHub"/></a>
+<a href="https://github.com/cleanroom-ai/photo-exif-privacy/actions/workflows/live-check.yml"><img src="https://img.shields.io/github/actions/workflow/status/cleanroom-ai/photo-exif-privacy/live-check.yml?style=flat-square&label=live&logo=githubactions&logoColor=white" alt="Live check: real browser against the published Space"/></a>
+</td>
+<td width="33%" valign="top">
+<a href="https://huggingface.co/spaces/cleanroom-ai/video-redaction"><img src="https://raw.githubusercontent.com/cleanroom-ai/video-redaction/main/assets/social-preview.png" alt="Video Redactor: open the live demo"/></a>
+<br/><b>🎬 <a href="https://huggingface.co/spaces/cleanroom-ai/video-redaction">Video Redactor</a></b>
+<br/><sub>tracks keys, names &amp; faces through screen recordings, re-encodes WebM</sub>
+<br/><a href="https://huggingface.co/spaces/cleanroom-ai/video-redaction"><img src="https://img.shields.io/badge/%F0%9F%A4%97_Try_it-FFD21E?style=flat-square" alt="Try it on Hugging Face"/></a>
+<a href="https://github.com/cleanroom-ai/video-redaction"><img src="https://img.shields.io/badge/Code-181717?style=flat-square&logo=github&logoColor=white" alt="Source on GitHub"/></a>
+<a href="https://github.com/cleanroom-ai/video-redaction/actions/workflows/live-check.yml"><img src="https://img.shields.io/github/actions/workflow/status/cleanroom-ai/video-redaction/live-check.yml?style=flat-square&label=live&logo=githubactions&logoColor=white" alt="Live check: real browser against the published Space"/></a>
+</td>
+</tr>
+</table>
+
+<sub>The <b>live</b> badge is a weekly GitHub Actions job that opens the published Hugging Face Space in a real browser, runs the example end to end, and fails if a single request leaves the page.</sub>
+
+```mermaid
+flowchart LR
+  subgraph TAB["Your browser tab (nothing leaves it)"]
+    direction LR
+    CORE["@cleanroom-ai/core<br/>OCR · secret &amp; PII rules · NER · faces<br/>ONNX Runtime Web + WASM workers"]:::core
+    CORE --> S["🕶️ Screenshots"]:::app
+    CORE --> L["🧽 Logs &amp; HAR"]:::app
+    CORE --> P["📄 PDFs"]:::app
+    CORE --> A["🔊 Audio<br/>+ Whisper"]:::app
+    CORE --> PH["📷 Photos<br/>+ EXIF"]:::app
+    CORE --> V["🎬 Video<br/>+ WebCodecs"]:::app
+  end
+  F["Your file"] --> TAB
+  TAB --> OUT["Clean copy<br/>verified"]:::ok
+  classDef core fill:#eef2ff,stroke:#6366f1,color:#312e81;
+  classDef app fill:#ecfeff,stroke:#06b6d4,color:#164e63;
+  classDef ok fill:#f0fdf4,stroke:#22c55e,color:#14532d;
+```
+
+<details>
+<summary><b>How do you know nothing is uploaded?</b></summary>
+<br/>
+
+- **Strict Content-Security-Policy.** Each page may only connect to its own origin (plus Hugging Face's
+  CDN for the Space's own model files), so the browser itself blocks any other destination.
+- **Everything is bundled.** Models, WASM runtimes and libraries ship inside the Space: no third-party
+  CDNs, fonts, analytics or accounts.
+- **CI that fails on any leak.** A real-browser test records every network request and fails the build
+  on any upload, any non-GET request or any third-party host, first against localhost and then against
+  the live Space.
+- **Redaction is verified, not assumed.** PDFs are flattened and then re-scanned to confirm no text
+  remains, and
+  videos are re-OCR'd after encoding to prove that none of the redacted items can still be read.
+- **Shared, tested engine.** All six tools run on [`@cleanroom-ai/core`](https://github.com/cleanroom-ai/cleanroom-core):
+  checksum-validated secret and card rules, entropy checks, a PII NER model, PP-OCRv6 and YuNet faces.
+
+</details>
 
 <p align="center">
   <a href="https://parag-labs.github.io/agentforge-dashboard/"><img src="assets/hero-agentforge.png" width="49%" alt="AgentForge — agent-fleet cockpit with cost, trust, and grounded insights (live demo)"/></a>
@@ -141,12 +250,7 @@ flowchart LR
 
 | Project | What it is | | CI |
 |---|---|---|---|
-| **[screenshot-redactor](https://github.com/cleanroom-ai/screenshot-redactor)** | hide API keys, passwords, PII, faces & QR codes in screenshots, 100% in the browser; OCR + PII models on ONNX Runtime Web, nothing uploaded | [▶ demo](https://huggingface.co/spaces/cleanroom-ai/pii-privacy-redaction) | ![ci](https://github.com/cleanroom-ai/screenshot-redactor/actions/workflows/ci.yml/badge.svg) |
-| **[log-secret-scrubber](https://github.com/cleanroom-ai/log-secret-scrubber)** | scrub API keys, tokens, cookies, emails & IPs from logs, .env files and HAR captures before sharing; structure-aware, 100% in the browser | [▶ demo](https://huggingface.co/spaces/cleanroom-ai/log-secret-scrubber) | ![ci](https://github.com/cleanroom-ai/log-secret-scrubber/actions/workflows/ci.yml/badge.svg) |
-| **[pdf-redaction](https://github.com/cleanroom-ai/pdf-redaction)** | true PDF redaction: detects PII & secrets, flattens pages, then verifies no text remains; nothing uploaded | [▶ demo](https://huggingface.co/spaces/cleanroom-ai/pdf-redaction) | ![ci](https://github.com/cleanroom-ai/pdf-redaction/actions/workflows/ci.yml/badge.svg) |
-| **[audio-pii-redaction](https://github.com/cleanroom-ai/audio-pii-redaction)** | bleeps names, phone numbers, card numbers & emails in recordings with Whisper + PII NER running in the browser | [▶ demo](https://huggingface.co/spaces/cleanroom-ai/audio-pii-redaction) | ![ci](https://github.com/cleanroom-ai/audio-pii-redaction/actions/workflows/ci.yml/badge.svg) |
-| **[photo-exif-privacy](https://github.com/cleanroom-ai/photo-exif-privacy)** | strips GPS, camera serials & thumbnails from photos, and blurs faces & plates, entirely on-device | [▶ demo](https://huggingface.co/spaces/cleanroom-ai/photo-exif-privacy) | ![ci](https://github.com/cleanroom-ai/photo-exif-privacy/actions/workflows/ci.yml/badge.svg) |
-| **[video-redaction](https://github.com/cleanroom-ai/video-redaction)** | finds and tracks keys, names, emails & faces through screen recordings, then re-encodes a redacted WebM in the browser | [▶ demo](https://huggingface.co/spaces/cleanroom-ai/video-redaction) | ![ci](https://github.com/cleanroom-ai/video-redaction/actions/workflows/ci.yml/badge.svg) |
+| **[cleanroom-ai](#cleanroom-ai-clean-it-before-you-share-it)** | six privacy tools (screenshots, logs, PDFs, audio, photos, video) that strip secrets & PII with OCR, speech and NER models running 100% in the browser; nothing uploaded | [▶ demos](https://huggingface.co/cleanroom-ai) | ![ci](https://github.com/cleanroom-ai/screenshot-redactor/actions/workflows/ci.yml/badge.svg) |
 | **[agent-trace](https://github.com/parag-labs/agent-trace)** | visual timeline + replay for agent runs — where a run spent time, tokens, and money, then diff two runs | [▶ demo](https://parag-labs.github.io/agent-trace/) | ![ci](https://github.com/parag-labs/agent-trace/actions/workflows/build.yml/badge.svg) |
 | **[agentforge-dashboard](https://github.com/parag-labs/agentforge-dashboard)** | register, monitor, and deeply compare agents — radar + trade-off insights, spatial agent map | [▶ demo](https://parag-labs.github.io/agentforge-dashboard/) | ![ci](https://github.com/parag-labs/agentforge-dashboard/actions/workflows/ci.yml/badge.svg) |
 | **[ledger-rag](https://github.com/parag-labs/ledger-rag)** | verifiable RAG — every answer ships a tamper-evident cryptographic proof (Python/C#/Java) | | ![ci](https://github.com/parag-labs/ledger-rag/actions/workflows/tests.yml/badge.svg) |

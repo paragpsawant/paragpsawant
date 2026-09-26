@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 360" width="1280" height="360" role="img" aria-labelledby="t d">
+  <title id="t">cleanroom-ai</title>
+  <desc id="d">Clean it before you share it. Six privacy tools; every model runs in your browser, nothing is uploaded.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1e1b4b"/>
+      <stop offset="0.55" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#082f49"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a5b4fc"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0"/>
+      <stop offset="0.8" stop-color="#22d3ee" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#67e8f9" stop-opacity="0.95"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#334155" stroke-opacity="0.35" stroke-width="1"/>
+    </pattern>
+    <clipPath id="doc"><rect x="790" y="54" width="430" height="252" rx="18"/></clipPath>
+    <style>
+      .t  { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; font-size: 64px; font-weight: 700; fill: #f8fafc; letter-spacing: -1px; }
+      .s  { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; font-size: 26px; font-weight: 500; fill: #c7d2fe; }
+      .u  { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; font-size: 18px; font-weight: 400; fill: #94a3b8; }
+      .f  { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; font-size: 14px; font-weight: 500; fill: #64748b; }
+      .c  { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; font-size: 15px; font-weight: 600; fill: #e0e7ff; }
+      .m  { font-family: ui-monospace, 'Cascadia Code', SFMono-Regular, Menlo, Consolas, monospace; font-size: 17px; font-weight: 500; fill: #cbd5e1; }
+      .k  { fill: #fda4af; }
+      .beam { animation: sweep 6s cubic-bezier(.45,.05,.55,.95) infinite; }
+      .sec  { animation: hide 6s linear infinite; }
+      .bar  { animation: show 6s linear infinite; transform-box: fill-box; transform-origin: left center; }
+      .r1 { animation-delay: 0s; } .r2 { animation-delay: .35s; } .r3 { animation-delay: .7s; } .r4 { animation-delay: 1.05s; }
+      .spark { animation: twinkle 3s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      @keyframes sweep { 0% { transform: translateX(-160px); } 55% { transform: translateX(520px); } 100% { transform: translateX(520px); } }
+      @keyframes hide  { 0%,18% { opacity: 1; } 26%,88% { opacity: 0; } 96%,100% { opacity: 1; } }
+      @keyframes show  { 0%,18% { opacity: 0; transform: scaleX(.2); } 26%,88% { opacity: 1; transform: scaleX(1); } 96%,100% { opacity: 0; transform: scaleX(.2); } }
+      @keyframes twinkle { 0%,100% { opacity: .55; transform: scale(.85); } 50% { opacity: 1; transform: scale(1.1); } }
+      @media (prefers-reduced-motion: reduce) { .beam, .sec, .bar, .spark { animation: none; } .sec { opacity: 0; } .bar { opacity: 1; } }
+    </style>
+  </defs>
+
+  <rect width="1280" height="360" rx="24" fill="url(#bg)"/>
+  <rect width="1280" height="360" rx="24" fill="url(#grid)"/>
+
+  <!-- logo -->
+  <g transform="translate(64 84) scale(0.375)">
+    <rect width="512" height="512" rx="116" fill="#312e81"/>
+    <path d="M256 84 L398 136 V246 C398 336 338 400 256 432 C174 400 114 336 114 246 V136 Z" fill="#0b1020" stroke="url(#edge)" stroke-width="16" stroke-linejoin="round"/>
+    <rect x="168" y="190" width="176" height="22" rx="11" fill="#94a3b8"/>
+    <rect x="156" y="232" width="200" height="52" rx="14" fill="url(#edge)"/>
+    <rect x="184" y="304" width="144" height="22" rx="11" fill="#64748b"/>
+    <path class="spark" d="M372 88 C376 112 384 120 408 124 C384 128 376 136 372 160 C368 136 360 128 336 124 C360 120 368 112 372 88 Z" fill="#f8fafc"/>
+  </g>
+
+  <text class="t" x="276" y="128">cleanroom-ai</text>
+  <text class="s" x="278" y="170">Clean it before you share it.</text>
+  <text class="u" x="278" y="204">Six privacy tools. Every model runs in your browser,</text>
+  <text class="u" x="278" y="228">so the file you are protecting is never uploaded.</text>
+
+  <!-- tool chips -->
+  <g transform="translate(278 252)">
+    <rect width="118" height="34" rx="17" fill="#1e293b" stroke="#475569"/><text class="c" x="59" y="22" text-anchor="middle">🕶️ Screenshots</text>
+    <rect x="128" width="76" height="34" rx="17" fill="#1e293b" stroke="#475569"/><text class="c" x="166" y="22" text-anchor="middle">🧽 Logs</text>
+    <rect x="214" width="72" height="34" rx="17" fill="#1e293b" stroke="#475569"/><text class="c" x="250" y="22" text-anchor="middle">📄 PDFs</text>
+    <rect x="296" width="80" height="34" rx="17" fill="#1e293b" stroke="#475569"/><text class="c" x="336" y="22" text-anchor="middle">🔊 Audio</text>
+    <rect x="386" width="86" height="34" rx="17" fill="#1e293b" stroke="#475569"/><text class="c" x="429" y="22" text-anchor="middle">📷 Photos</text>
+  </g>
+  <g transform="translate(278 294)">
+    <rect width="80" height="34" rx="17" fill="#1e293b" stroke="#475569"/><text class="c" x="40" y="22" text-anchor="middle">🎬 Video</text>
+  </g>
+
+  <!-- document being cleaned -->
+  <rect x="790" y="54" width="430" height="252" rx="18" fill="#0b1020" stroke="url(#edge)" stroke-width="3"/>
+  <circle cx="818" cy="80" r="6" fill="#a5b4fc"/><circle cx="838" cy="80" r="6" fill="#818cf8"/><circle cx="858" cy="80" r="6" fill="#67e8f9"/>
+  <text class="m" x="1198" y="86" text-anchor="end" style="font-size:13px;fill:#64748b">support-ticket.log</text>
+
+  <g clip-path="url(#doc)">
+    <text class="m" x="818" y="130">user:</text>
+    <text class="m sec r1 k" x="888" y="130">maria.lopez@acme.io</text>
+    <rect class="bar r1" x="888" y="115" width="206" height="20" rx="5" fill="#f8fafc"/>
+
+    <text class="m" x="818" y="170">api_key=</text>
+    <text class="m sec r2 k" x="914" y="170">AKIA····7Q2WXZ</text>
+    <rect class="bar r2" x="914" y="155" width="162" height="20" rx="5" fill="#f8fafc"/>
+
+    <text class="m" x="818" y="210">card:</text>
+    <text class="m sec r3 k" x="888" y="210">4242 4242 4242 4242</text>
+    <rect class="bar r3" x="888" y="195" width="206" height="20" rx="5" fill="#f8fafc"/>
+
+    <text class="m" x="818" y="250">phone:</text>
+    <text class="m sec r4 k" x="898" y="250">+1 (415) 555-0132</text>
+    <rect class="bar r4" x="898" y="235" width="184" height="20" rx="5" fill="#f8fafc"/>
+
+    <text class="m" x="818" y="286" style="fill:#475569">status=200 · latency=84ms</text>
+
+    <rect class="beam" x="790" y="54" width="120" height="252" fill="url(#beam)"/>
+  </g>
+
+  <text class="f" x="1220" y="336" text-anchor="end">🔒 on-device · open source · Apache-2.0</text>
+</svg>
