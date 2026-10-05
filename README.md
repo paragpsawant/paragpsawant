@@ -9,7 +9,7 @@ surfaces on top of it.
 > tested code validates and executes.** The interesting engineering isn't the
 > prompt — it's the guardrail the prompt can't talk its way past.
 
-**44 repos · 1,140+ tests green in CI · 20 live demos · cores in 7 languages · 8 with reproducible benchmarks**
+**45 repos · 1,180+ tests green in CI · 21 live demos · cores in 7 languages · 9 with reproducible benchmarks**
 
 ![Python](https://img.shields.io/badge/Python-3670A0?style=flat-square&logo=python&logoColor=ffdd54)
 ![C#](https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=dotnet&logoColor=white)
@@ -172,7 +172,7 @@ consistent hashing instead of `hash % N`, from
 ![remap cost: consistent hashing vs hash % N](https://raw.githubusercontent.com/parag-labs/consistent-hash/main/bench/results/remap_vs_modulo.png)
 
 Adding a node to a 64-node cluster remaps **~1%** of keys with a consistent-hash ring;
-plain `hash % N` remaps **~98.5%** — nearly the entire keyspace, every time. Eight
+plain `hash % N` remaps **~98.5%** — nearly the entire keyspace, every time. Nine
 repos ship a `BENCHMARKS.md` like this, measured on a plain machine from a script you
 can re-run.
 
