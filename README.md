@@ -201,12 +201,7 @@ all six in CI and publishes a **150/150 pass/fail matrix** — including *exact*
 cross-language identity of the SHA1 rollout-bucketing, so a user lands in the same
 percentage slice no matter which SDK a service uses. Ships SDKs + OpenFeature providers to
 every registry, a control-plane server with an Admin UI, and a self-hosting story
-(`docker compose up`).
-
-<p align="center">
-  <a href="https://switchboard-io.github.io/switchboard/"><img src="assets/hero-switchboard.png" width="70%" alt="Switchboard — six-language conformance matrix + evaluation benchmarks (live dashboard)"/></a>
-</p>
-<p align="center"><sub><b><a href="https://switchboard-io.github.io/switchboard/">Live dashboard &amp; playground</a></b> — one engine, six languages, proven identical in CI.</sub></p>
+(`docker compose up`). **[Live dashboard &amp; playground →](https://switchboard-io.github.io/switchboard/)**
 
 ### cleanroom-ai: clean it before you share it
 
